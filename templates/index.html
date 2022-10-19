@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">The Great American Counter </h5>
+            <p class="card-text">Welcome to my counter app, we track how many time you refresh the page</p>
+            <p class="text-center">{{session['click']}}</p>
+        </div>
+        <div class="justify-around mx-auto">
+            <a href="/" class = "btn btn-outline-info">Click</a>
+            <a href="/destroy"class="btn btn-outline-danger">Reset</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
